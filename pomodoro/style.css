@@ -1,0 +1,63 @@
+#container{
+  border:1px solid #333;
+  border-radius :20px;
+  width:400px;
+  margin:20px auto;
+  padding:20px;
+  text-align:center;
+}
+
+#timer{ 
+  font-size:50px; 
+}
+
+#time{
+  margin-top:70px;
+  z-index : 1;
+  position:relative;
+}
+
+#filler{
+  background : #ddffcc;
+  height: 0px;
+  width: 200px;
+  position:absolute;
+  bottom:0;
+}
+
+#buttons button { 
+  background-color:#a6cbf0; 
+  border:none; 
+  color:#fff; 
+  cursor:pointer; 
+  padding:5px; 
+  width:90px; 
+  margin:10px auto;
+  font-size:14px;
+  height : 50px;
+}
+
+#buttons button#work{
+    background : #0c0;
+}
+#buttons button#stop{
+    background : #f00;
+  }
+#buttons button#reset{
+    background : rgb(223, 219, 219);
+    color: black;
+  }
+
+.nav {
+  display: flex;
+}
+
+.nav a {
+  text-decoration: none;
+  flex-grow:  1;
+  text-align: center;
+  background-color: blue;
+  color:white;
+  padding:10px;
+  margin:3px
+}

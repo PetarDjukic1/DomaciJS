@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --hue-default: 173;
+  --hue-hover: 197;
+  --hue-wrong: 0;
+  --hue-correct: 135;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  --hue: var(--hue-default);
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(0deg, #f4a261, #2a9d8f);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 0 0 10px 2px;
+}
+
+#question-container {
+  text-align: center;
+
+  font-size: 1.5rem;
+  letter-spacing: 0.125rem;
+}
+.btn-grid {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.btn {
+  --hue: var(--hue-default);
+  border: 1px solid hsl(var(--hue), 57%, 32%);
+  background-color: hsl(var(--hue), 57%, 32%);
+  color: white;
+  outline: none;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  padding: 0.5rem 0.8rem;
+  box-shadow: 0 0 2px black;
+  text-shadow: 0 0 1px white;
+  font-size: 1.5rem;
+  letter-spacing: 0.125rem;
+  border-radius: 20px;
+  transition: all 0.2s linear;
+}
+
+.btn:hover {
+  background: hsl(var(--hue), 37%, 24%);
+  border: 1px solid hsl(var(--hue), 37%, 24%);
+  box-shadow: 0px 0px 5px 1px black;
+}
+
+.btn.correct {
+  --hue: var(--hue-correct);
+}
+
+.btn.wrong {
+  --hue: var(--hue-wrong);
+}
+
+.start-btn,
+.next-btn {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px 20px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.score-container {
+  text-align: center;
+}
+
+.score-container p {
+  margin-bottom: 0;
+  font-size: 1.5rem;
+  letter-spacing: 0.125rem;
+}
+.score-container h1 {
+  margin-top: 0;
+}

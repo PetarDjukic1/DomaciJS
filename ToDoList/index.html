@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+
+    <title>To-Do-List</title>
+  </head>
+  <body>
+    <header>
+      <div class="main-header">
+        <div class="main-wrapper">
+          <div class="header-title">
+            <h1>To-Do-List</h1>
+          </div>
+          <div class="search-container">
+            <input
+              type="text"
+              class="search-field"
+              id="filter"
+              placeholder="Search Items..."
+            />
+            <div class="search-results">
+              <ul>
+                <li>some content</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="main">
+      <div class="add-items-container">
+        <h2>Add Items</h2>
+        <form id="addForm">
+          <input type="text" id="item" />
+          <input type="submit" value="Submit" class="submit-btn" />
+        </form>
+      </div>
+      <h2>Items</h2>
+      <ul id="items" class="list-group"></ul>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
